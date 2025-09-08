@@ -1,0 +1,104 @@
+.homepage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.why-us-section {
+  padding: 5rem 2rem;
+  background: linear-gradient(to bottom right, #0d0d0d, #1a1a1a);
+  color: white;
+  text-align: center;
+}
+
+.why-us-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+  color: #fff;
+  position: relative;
+}
+
+.why-us-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.why-card {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 16px;
+  width: 300px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+.why-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+}
+
+.why-card span {
+  position: relative;
+bottom: -92px;
+  font-size: 1.2rem;
+  display: block;
+  
+}
+
+.why-card h3 {
+  
+    position: relative;
+  bottom: -69px;
+  color: #fff;
+}
+
+.why-card p {
+  position: relative;
+  bottom: -50px;
+  color: #ccc;
+}
+
+
+.content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  top: 40%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  width: 60%;
+  margin: 0 auto;
+}
+
+.content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+
