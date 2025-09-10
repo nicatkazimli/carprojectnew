@@ -10,7 +10,7 @@ import BestCar from './Pages/BestCar/BestCar'
 import KoreyaCar from './Pages/KoreyaCar/KoreyaCar'
 import SingleCar from './Pages/KoreyaCar/singleCar'
 import CustomCar from './Pages/CustomCar/CustomCar'
-import HybridCar from './Pages/HybridCar/HybridCar.Jsx'
+import HybridCar from './Pages/HybridCar/HybridCar'
 import ElectricCar from './Pages/ElectricCar/ElectricCar'
 
 const App = () => {
