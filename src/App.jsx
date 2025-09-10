@@ -1,10 +1,9 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import './App.css'
 
-// Layout
 import Header from './Layout/Header'
 
-// Pages
 import HomePage from './Pages/HomePage/HomePage'
 import BestCar from './Pages/BestCar/BestCar'
 import KoreyaCar from './Pages/KoreyaCar/KoreyaCar'
