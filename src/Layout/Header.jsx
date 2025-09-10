@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './Header.css'
 
 const Header = () => {
@@ -9,17 +9,15 @@ const Header = () => {
         <div className="logo">
           <img src="/logo.jpg" alt="Logo" />
         </div>
-        <nav className="nav-links">
-          <Link to="/">Ana Səhifə</Link> 
-          <Link to="/BestCar">Ən çox satılanlar</Link>
-          <Link to="/KoreyaCar">Koreyada olan avtomobillər</Link>
-          <Link to="/CustomCar">Yolda olan avtomobillər</Link>
-          <Link to="/HybridCar">Hibrid avtomobillər</Link>
-          <Link to="/ElectricCar">Elektrik avtomobillər</Link>
-        </nav>
-      </div>
 
-      <div className="right-section">
+        <nav className="nav-links">
+          <NavLink to="/" className={({ isActive }) => isActive ? 'active link' : 'link'}>Ana Səhifə</NavLink>
+          <NavLink to="/BestCar" className={({ isActive }) => isActive ? 'active link' : 'link'}>Ən çox satılanlar</NavLink>
+          <NavLink to="/KoreyaCar" className={({ isActive }) => isActive ? 'active link' : 'link'}>Koreyada olan avtomobillər</NavLink>
+          <NavLink to="/CustomCar" className={({ isActive }) => isActive ? 'active link' : 'link'}>Yolda olan avtomobillər</NavLink>
+          <NavLink to="/HybridCar" className={({ isActive }) => isActive ? 'active link' : 'link'}>Hibrid avtomobillər</NavLink>
+          <NavLink to="/ElectricCar" className={({ isActive }) => isActive ? 'active link' : 'link'}>Elektrik avtomobillər</NavLink>
+        </nav>
       </div>
     </header>
   )

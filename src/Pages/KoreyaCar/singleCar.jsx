@@ -81,7 +81,7 @@ const SingleCar = () => {
         </p>
 
         <div className="contact-links" style={{ fontSize: 16, color: "#222" }}>
-          {[{ num: "0513562838", tel: "+994513562838" }, { num: "010-717-01-77", tel: "+994107170177" }].map(({ num, tel }) => (
+          {[{ num: "051-356-28-38", tel: "+99451-356-28-38" }, { num: "010-717-01-77", tel: "+994107170177" }].map(({ num, tel }) => (
             <p
               key={tel}
               style={{
