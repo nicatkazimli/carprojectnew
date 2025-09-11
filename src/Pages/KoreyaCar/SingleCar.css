@@ -1,8 +1,7 @@
-
 .car-container {
   display: flex;
   gap: 40px;
-  padding: 30px 30px;
+  padding: 30px;
   max-width: 1500px;
   margin: 0 auto;
   background: #f9faff;
@@ -10,18 +9,17 @@
   box-shadow: 0 8px 24px rgba(0,0,0,0.12);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   align-items: center;
-  height: 450px;
-
-}
-.car-container:hover{
-    background-color: #e9d2d2;
+  height: auto; /* 🔑 sabit height silindi */
 }
 
+.car-container:hover {
+  background-color: #e9d2d2;
+}
 
 .car-image-wrapper {
-    margin-top: 20px;
+  margin-top: 20px;
   width: 700px;
-  height: 320px;
+  height: auto; /* 🔑 sabit height silindi */
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 12px 30px rgba(0,0,0,0.2);
@@ -36,7 +34,7 @@
 
 .car-image-wrapper img {
   width: 100%;
-  height: 500px;
+  height: auto; /* 🔑 sabit 500px əvəzinə auto */
   object-fit: cover;
   user-select: none;
   transition: transform 1s ease;
@@ -45,7 +43,6 @@
 .car-image-wrapper:hover img {
   transform: scale(1.1);
 }
-
 
 .swiper-button-next,
 .swiper-button-prev {
@@ -61,9 +58,8 @@
   filter: drop-shadow(0 0 5px rgba(0,55,102,1));
 }
 
-
 .car-info {
-  max-width: calc(100% - 550px); 
+  max-width: calc(100% - 550px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,7 +74,6 @@
   color: #003366;
   letter-spacing: 0.04em;
   user-select: none;
-
   position: relative;
   cursor: pointer;
 }
@@ -89,9 +84,9 @@
   margin-bottom: 20px;
   color: #444;
   font-style: italic;
-
   position: relative;
   cursor: pointer;
+  text-align: justify;
 }
 
 .car-year,
@@ -101,11 +96,9 @@
   color: #555;
   margin-bottom: 12px;
   letter-spacing: 0.02em;
-
   position: relative;
   cursor: pointer;
 }
-
 
 .car-title::after,
 .car-about::after,
@@ -130,7 +123,6 @@
   transform: scaleX(1);
 }
 
-
 .car-title,
 .car-about,
 .car-year,
@@ -144,7 +136,6 @@
 .car-vin:hover {
   color: #003366;
 }
-
 
 .contact-links p {
   display: flex;
@@ -185,42 +176,65 @@
   border-bottom: 2px solid #004a99;
 }
 
-
+/* 📱 Tablet və mobil üçün */
 @media (max-width: 1100px) {
   .car-container {
     flex-direction: column;
     padding: 20px 15px;
+    height: auto; /* 🔑 burada da auto */
   }
 
   .car-image-wrapper {
     width: 100%;
     height: auto;
     margin-bottom: 25px;
+    max-width: 600px;
   }
 
   .car-image-wrapper img {
-    height: 320px;
+    height: auto;
+    max-height: 320px; 
   }
 
   .car-info {
     max-width: 100%;
+    text-align: center;
   }
 }
 
-@media (max-width: 1024px) {
-  .grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-@media (max-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 1100px) {
+  .car-info {
+    max-width: 100%;
+    text-align: center; 
   }
-}
 
-@media (max-width: 480px) {
-  .grid {
-    grid-template-columns: 1fr;
+  .car-about {
+    text-align: justify; 
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .car-image-wrapper {
+    width: 100%;
+    max-width: 700px; 
+    margin: 0 auto 25px auto;
+  }
+
+  .car-image-wrapper img {
+    width: 100%;
+    height: auto;
+    max-height: 400px; 
+  }
+
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
   }
 }
