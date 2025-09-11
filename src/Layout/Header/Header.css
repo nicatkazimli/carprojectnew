@@ -53,7 +53,7 @@
   text-decoration: none;
   color: #0d0526;
   font-weight: 500;
-  font-size: 22.5px;
+  font-size: 20.5px;
   font-family: Arial, Helvetica, sans-serif;
   transition: color 0.3s ease;
 }
@@ -126,5 +126,12 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+
+
+
+
+
 
 

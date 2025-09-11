@@ -1,5 +1,6 @@
 import React from 'react';
 import './HomePage.css';
+import Rotating from '../../Layout/Rotating/Rotating';
 
 const HomePage = () => {
   return (
@@ -14,8 +15,8 @@ const HomePage = () => {
           <h1>Hər növ avtomobillər burada</h1>
           <p>Sürət, performans, həyəcan və əsl keyfiyyət</p>
           <div className="buttons">
-            
           </div>
+          <Rotating/>
         </div>
       </div>
       

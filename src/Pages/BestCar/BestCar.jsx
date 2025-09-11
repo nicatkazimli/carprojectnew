@@ -29,10 +29,10 @@ const BestCar = () => {
     {loading ? (<h1>loading...</h1>
     ) : (
       <div className="container">
-       <header className="hero">
-  <h1 className="hero-title">Ən çox satılan Avtomobillər</h1>
-  <p className="hero-subtitle">Ən yeni, dəbdə olan avtomobilləri axtarın və kəşf edin</p>
-</header>
+        <header className="header">
+          <h1 className="title">Ən çox satılan Avtomobillər</h1>
+          <p className="subtitle">Ən yeni, dəbdə olan avtomobilləri axtarın və kəşf edin</p>
+        </header>
 
         <div className="search-container">
           <input

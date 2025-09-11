@@ -1,0 +1,38 @@
+.shiny-text {
+  position: relative;
+  display: inline-block;
+  color: #100858;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.shiny-text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(254, 223, 223, 0) 0%,
+    rgba(239, 238, 255, 0.6) 50%,
+    rgba(238, 186, 186, 0) 100%
+  );
+  animation: shine linear infinite;
+  animation-duration: var(--animation-duration, 3s);
+  pointer-events: none;
+}
+
+.shiny-text.disabled::before {
+  display: none;
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}

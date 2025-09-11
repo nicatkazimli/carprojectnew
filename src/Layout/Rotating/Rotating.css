@@ -1,0 +1,41 @@
+.rotating-h1 {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  height: 3rem; 
+  overflow: hidden;
+  white-space: nowrap;
+  bottom: 35px;
+}
+
+.animated-word {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #b79c2f; 
+  color: #000; 
+  border-radius: 10px; 
+  margin-left: 6px;
+  animation: slide-in 0.5s ease-in-out;
+  white-space: nowrap;
+  line-height: 1;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
