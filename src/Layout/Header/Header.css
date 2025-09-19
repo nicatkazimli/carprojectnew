@@ -111,21 +111,32 @@
 }
 @media (max-width: 768px) {
   .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, auto);  
     gap: 10px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
   }
 
-  .link {
-    font-size: 0.8rem;
+  .nav-links a {
+    font-size: 0.9rem;
     padding: 0.4rem 0.6rem;
   }
+}
 
+@media (max-width: 460px) {
+  .nav-links {
+    gap: 8px;
+  }
 
-  .shiny-text {
-    font-size: 0.8rem;
+  .nav-links a {
+    font-size: 0.85rem;
+    padding: 0.35rem 0.5rem;
   }
 }
+
 
 
 
